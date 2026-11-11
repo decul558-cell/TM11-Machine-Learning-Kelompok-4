@@ -1,0 +1,62 @@
+{
+    "best_model": "Gradient Boosting",
+    "dataset": "computer-prices-2025/computer_prices_all.csv",
+    "sample_size": 25000,
+    "training_size": 20000,
+    "testing_size": 5000,
+    "target": "price",
+    "features": [
+        "device_type",
+        "brand",
+        "model",
+        "release_year",
+        "os",
+        "form_factor",
+        "cpu_brand",
+        "cpu_model",
+        "cpu_tier",
+        "cpu_cores",
+        "cpu_threads",
+        "cpu_base_ghz",
+        "cpu_boost_ghz",
+        "gpu_brand",
+        "gpu_model",
+        "gpu_tier",
+        "vram_gb",
+        "ram_gb",
+        "storage_type",
+        "storage_gb",
+        "storage_drive_count",
+        "display_type",
+        "display_size_in",
+        "resolution",
+        "refresh_hz",
+        "battery_wh",
+        "charger_watts",
+        "psu_watts",
+        "wifi",
+        "bluetooth",
+        "weight_kg",
+        "warranty_months"
+    ],
+    "evaluation": [
+        {
+            "Model": "AdaBoost",
+            "MAE": 288.82939799657885,
+            "MAPE": 16.16272261240703,
+            "MSE": 144940.38001449947,
+            "RMSE": 380.71036236816497,
+            "R2": 0.5693467047848335,
+            "Waktu_Training": 1.2580978870391846
+        },
+        {
+            "Model": "Gradient Boosting",
+            "MAE": 237.53508514242722,
+            "MAPE": 13.265629877988863,
+            "MSE": 105827.41557329976,
+            "RMSE": 325.3112595243204,
+            "R2": 0.6855608820938157,
+            "Waktu_Training": 1.5849800109863281
+        }
+    ]
+}
